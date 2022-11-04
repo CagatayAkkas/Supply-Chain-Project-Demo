@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Table Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ititial-scale=1.0">
+
+</head>
+
+<style>
+
+body{
+
+  background-image:  linear-gradient(to right, #141a19, #103f36);
+
+}
+* {
+  font-family: sans-serif; 
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group{
+  display: flex;
+  border-radius:25px;
+  overflow: hidden;
+}
+
+.form-control, .btn{
+  height:40px;
+  border: none;
+  outline:none;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0 7px;
+  background: #f0f0f0;
+  transition: .3s ease;
+  color: #000000;
+}
+
+input.form-control{
+  width: 350px;
+}
+
+.btn{
+  background-color: #009879;
+  color:#ffffff;
+  cursor:pointer;
+}
+
+.btn:hover{
+  box-shadow: inset 0 0 100px rgba(255,255,255,.2);
+}
+
+.form-control:focus{
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.092);
+}
+
+.form-control::placeholder{
+  color: #c0c0c0;
+}
+
+.connect:hover{
+  box-shadow: inset 0 0 100px rgba(93, 93, 93, 0.077);
+
+}
+.connect{
+  
+  width: 425px;
+  color: #c0c0c0;
+  background-color: #f0f0f0;
+
+}
+footer, footer a {
+    color: #dfdfe2;
+  }
+  
+  address {
+    text-align: center;
+    padding: 0.3em;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .linkedin:hover{
+    color: #88c1b6;
+  } 
+
+  .copyright:hover{
+    color: #88c1b6;
+  }
+
+</style>
+
+<body>
+  <br>
+      <h1 align="center" style="color: rgb(255, 255, 255)"> Last Step of Logistics Chain </h2><br>
+
+      <div class="container">
+        <div id="data">
+          	
+            <div class="input-group">
+              <input type="text" id="codeOfProduct" class="form-control" placeholder=" Enter Code">
+              <button class="btn" id="searchButton">Search</button>
+            </div>
+          </div>
+     </br>
+         <button  class="btn connect" id="connectButton" style="border-radius: 20px">Connect</button>
+
+      <table bgcolor="white" class="content-table">
+       <thead>
+           <tr>
+               <th>Code Of Product</th>
+               <th>Name Of Product</th>
+               
+               <th>Origin Of Product</th>
+               <th >Address Of Seller</th>
+               <th >Certificate Of Product</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody> 
+        </table>
+       
+        <footer>
+           <a style="color: rgb(159, 159, 159)"class="copyright"href="https://pbs.twimg.com/media/B5A8GKNCEAAIQej.jpg">Copyright Â© 2022 </a> | Designed By <a class="linkedin" target="_blank" href="https://tr.linkedin.com/in/%C3%A7a%C4%9Fatay-akka%C5%9F-016976235?original_referer=https%3A%2F%2Fwww.google.com%2F"> Cagatay Akkas </a> & <a class= "linkedin" target="_blank" href="https://www.linkedin.com/in/selimaynigul/?trk=public_profile_browsemap_profile-result-card_result-card_full-click&original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=tr">Selim Aynigul</a>
+            <br /> <br />
+        </footer>
+     
+
+        <script src="Scripts/Fronthand.js" type="module"> </script>
+</body>
+
+</html>
